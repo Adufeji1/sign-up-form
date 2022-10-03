@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans Mono', monospace;
+font-family: 'Roboto', sans-serif;
+}
+
+#background {
+    background-image: linear-gradient(black, white);
+    max-width: 1400px;
+    width: 100%;
+    height: 500px;
+    animation-name: square;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease;
+}
+
+
+@keyframes square {
+    from {background-color: white;}
+    to {background-color: black;}
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+#background:hover {
+    background-image: linear-gradient(brown, yellow, white);
+    transition: width 2s, height 4s;
+}
+
+.background_page {
+    background-image: linear-gradient(rgb(228, 222, 222), rgba(241, 203, 109, 0.879));
+    border-radius: 5px;
+    width: 600px;
+    height: 450px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.signup {
+    color: brown;
+    font-size: 40px;
+    padding-top: 5px;
+}
+
+.image {
+    width: 600px;
+    height: 450px;
+    position: absolute;
+    left: 600px;
+    right: 30px;
+    bottom: -2px;
+    border-radius: 5px;
+}
+
+.listForm {
+    display: block;
+    margin: auto;
+    background-image: linear-gradient(white, rgb(183, 117, 19));
+    color:  black;
+    width: 400px;
+    height: 35px; 
+    margin-bottom: 15px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border-color: yellow;
+    cursor: pointer;
+}
+.lists:hover {
+    background-color: rgb(215, 181, 10);
+}
+
+.send:hover {
+    background-image: linear-gradient(yellow, black);
+}
+
+.send {
+    background-image: linear-gradient(yellow, white);
+    margin-top: 20px;
+    width: 100px;
+    display: block;
+    margin: auto;
+    line-height: 20px;
+    border-radius: 5px
+}
+
+
+
+
