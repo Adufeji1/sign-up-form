@@ -13,25 +13,30 @@
 <body>
     <section id="background">
     <div class="background_page">
-        <p class="signup">SignUp Form</p>
+        <p class="signup">DeeFlowers SignUp Form</p>
         <div class="input_area">
             <form class="lists">
-                <input  class="listForm box-0" type="text" placeholder="First Name:"/>
-                
+                <label class="name" for="Firstname"><b>First name:</b></label>
+                <input  class="listForm box-0"  type="text" placeholder="First Name:" autocomplete="First name"/>
             </form>
             <form class="lists">
+                <label class="name" for="Last name"><b>Last name:</b></label>
                 <input class="listForm box-1" type="text" placeholder="Last name:"/>
             </form>
             <form class="lists">
+                <label class="name" for="Email"><b>Email:</b></label>
                 <input class="listForm box-2" type="text" placeholder="Email:"/>
             </form>
             <form class="lists">
+                <label class="name" for="Password"><b>Password:</b></label>
                 <input class="listForm box-3" type="text" placeholder="Password:"/>
             </form>
             <form class="lists">
-                <input class="listForm" type="text" placeholder="Confirm password:"/>
+                <label  id="special" class="name" for="Confirm:"><b>Confirm:</b></label>
+                <input class="listForm" type="text" placeholder="Confirm password"/>
             </form>
-            <button class="send">Send</button>
+            <button class="send">Sign up here</button>
+            <p class="sign">Don't have an account?<a href="./">signup</a></p>
         </div>
 
         <div class="right-side">
@@ -39,7 +44,7 @@
         </div>
          <div class="heading_box"></div>
         <form action=""></form>
-    </div>   
+    </div> 
 </section>
 </body>
 </html>
